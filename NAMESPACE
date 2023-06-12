@@ -1,0 +1,7 @@
+useDynLib(jointmultistate, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+
+export("joint_multistate_model")
+export("info_partial")
+export("info_observed")
+export("loglikelihood")
