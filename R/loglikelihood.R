@@ -42,6 +42,7 @@ loglikelihood<-function(model_fit,nqmc=2000){
     ndimz*sum(possible_transitions)+
     ndimy*sum(possible_transitions)+
     sum(possible_transitions)-sum(rowSums(possible_transitions)>=1)+
+    ndimy+
     ndimy*ndimx+
     sum(nbasy)+
     (sum(nbasy))^2
